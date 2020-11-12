@@ -1,0 +1,40 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+body  {background-image: url('matrix.jpg');}
+
+h3 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px dodgerblue;
+}
+
+* {box-sizing: border-box;}
+/* "achtergrond" van de textvakken */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    resize: vertical;
+}
+/*verzendknop */
+input[type=submit] {
+    background-color: midnightblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* als je over de verzendknop hovert */
+input[type=submit]:hover {
+    background-color: deepskyblue;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: royalblue;
+    padding: 20px;
+}

@@ -1,5 +1,6 @@
 body {background-image: url('matrix.jpg');}
-
+h3 { font-size: 20px;
+color: midnightblue}
 p {padding: 10px 10px;}
 
 div.transbox {margin: 30px;
@@ -11,11 +12,11 @@ div.transbox {margin: 30px;
     background-color: transparent;
     text-decoration: none;}
 
-  a:visited {color: red;
+  a:visited {color: mediumblue;
     background-color: transparent;
     text-decoration: none;}
 
-  a:hover {color: orange;
+  a:hover {color: cornflowerblue;
     background-color: transparent;
     text-decoration: underline;}
 

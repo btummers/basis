@@ -19,7 +19,7 @@ input[type=text], select, textarea {
     margin-bottom: 5px;
     resize: vertical;
 }
-/*verzendknop */
+/*verzendknop*/
 input[type=submit] {
     background-color: midnightblue;
     color: white;
@@ -43,7 +43,6 @@ input[type=reset]:hover {
     background-color: red;
 }
 
-/* als je over de verzendknop hovert */
 input[type=submit]:hover {
     background-color: deepskyblue;
 }

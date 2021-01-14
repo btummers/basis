@@ -7,9 +7,8 @@
 
 </head>
 <body>
-
 <div style="text-align: center;"><h3>Contact Form (work in progress)</h3></div>
-
+<form id="myForm">
 <div class="container">
         <label for="name">Naam</label>
         <input type="text" id="name" name="name" placeholder="Naam...">
@@ -18,14 +17,16 @@
     <label for="man"> Man </label>
     <input type="radio" name="geslacht" id="vrouw">
     <label for="vrouw"> Vrouw </label>
-<hr>
+<br>
+    <br>
         <label for="woonplaats">Woonplaats</label>
         <input type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats...">
 
     <label for="provincie">Provincie</label>
     <select id="provincie" name="provincie">
         <option value="provincie">Groningen</option>
-        <option value="provincie">Drenthe </option>
+        <option value="provincie">Friesland</option>
+        <option value="provincie">Drenthe</option>
         <option value="provincie">Overijssel</option>
         <option value="provincie">Flevoland</option>
         <option value="provincie">Gelderland</option>
@@ -44,8 +45,16 @@
         <textarea id="opmerking" name="opmerking" placeholder="..." style="height:200px"></textarea>
 
         <input type="submit" value="Verzend">
-        <input type="reset" value="Reset">
+        <input type="reset" onclick="myFunction()" value="Reset">
         <a href="https://briantummers.nl">Annuleer</a>
+
 </div>
+</form>
+
+<script>
+    function myFunction() {
+        document.getElementById("myForm").reset();
+    }
+</script>
 </body>
 </html>

@@ -1,12 +1,20 @@
-body {background-image: url('chip.jpg');}
+body {
+  background-image: url('chip.jpg');
+  font-family: "Libre Baskerville";
+
+}
 h3 { font-size: 20px;
-color: midnightblue}
+color: orange}
+
 p {
   color: white;
   font-family: Georgia;
   padding: 10px 10px;
 }
 
+link {
+  color: goldenrod;
+}
 div.transbox {margin: 30px;
   background-color: black;
   border: 1px solid gray;

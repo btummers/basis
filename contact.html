@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title> Contact Formulier </title>
     <link rel="stylesheet" href="contactstyle.css">
@@ -20,7 +20,7 @@
 <div style="text-align: center;"><h3>Contact Form </h3></div>
 <form id="myForm">
 <div class="container">
-        <label for="name">Naam</label>
+    <label for="name"> <font color="orange"> Naam </label>
         <input type="text" id="name" name="name" placeholder="Naam...">
 
     <input type="radio" name="geslacht" id="man">
@@ -51,13 +51,13 @@
         <label for="gbdatum">Geboorte datum</label>
         <input type="text" id="gbdatum" name="gbdatum" placeholder="Geboorte datum...">
 
-        <label for="opmerking">Opmerking</label>
-        <textarea id="opmerking" name="opmerking" placeholder="..." style="height:200px"></textarea>
+        <label for="beschrijving">Beschrijving</label>
+        <textarea id="beschrijving" name="beschrijving" placeholder="..." style="height:200px"></textarea>
 
         <input type="submit" value="Verzend">
         <input type="reset" onclick="myFunction()" value="Reset">
         <a href="https://briantummers.nl">Annuleer</a>
-
+</font>
 </div>
 </form>
 
@@ -66,5 +66,32 @@
         document.getElementById("myForm").reset();
     }
 </script>
+<?php
+if (!isset($_POST["submit"])) { ?>
+
+<form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
+To: <input type="text" name="to_email"><br>
+From: <input type="text" name="from_email"><br>
+Subject: <input type="text" name="subject"><br>
+Message: <textarea rows="10" cols="20" name="message"></textarea><br>
+<input type="submit" name="submit" value="Send Email">
+</form>
+<?php
+} else {
+
+  if (isset($_POST["to_email"])) {
+    $to_email = $_POST["to_email"];
+    $from_email = $_POST["from_email"];
+    $subject = $_POST["subject"];
+    $body = $_POST["message"];
+
+    if ( mail($to_email, $subject, $body, $headers)) {
+      echo("Email successfully sent to $to_email...");
+    } else {
+      echo("Email sending failed...");
+    }
+  }
+}
+?>
 </body>
 </html>

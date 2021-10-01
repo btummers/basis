@@ -1,10 +1,11 @@
 body {font-family: Arial, Helvetica, sans-serif;}
-body  {background-image: url('plate.jpg');}
+body  {background-image: url('chip.jpg');}
 
+/* "contact form" */
 h3 {
     font-size: 30px;
     color: white;
-    text-shadow: 2px 2px 5px dodgerblue;
+    text-shadow: 2px 2px 5px orange;
 }
 
 * {box-sizing: border-box;}
@@ -28,7 +29,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
+/*resetknop*/
 input[type=reset] {
     background-color: darkred;
     color: white;
@@ -44,12 +45,12 @@ input[type=reset]:hover {
 }
 
 input[type=submit]:hover {
-    background-color: deepskyblue;
+    background-color: lightblue;
 }
 
 .container {
     border-radius: 5px;
-    background-color: royalblue;
+    background-color: #333;
     padding: 20px;
 }
 
@@ -92,5 +93,6 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: goldenrod;
 }
+

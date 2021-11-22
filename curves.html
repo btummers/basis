@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: 'Libre Baskerville', serif;
+            color: white;
+            background: #253529;
+            overflow-x: hidden;
+
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+
+        }
+
+        .blue {
+            background: darkblue;
+        }
+        .red {
+            background: darkred;
+        }
+        .yellow {
+            background: goldenrod;
+        }
+
+        .green {
+            background: green;
+        }
+        .pink {
+            background: pink;
+        }
+
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .curve::before {
+            content:'';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: #253529;
+            transform: translate(85%, 60%);
+
+        }
+
+        .curve::after {
+            content:'';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            width: 55%;
+            height: 100%;
+            background-color: darkblue;
+            transform: translate(-4%, 40%);
+            z-index: -1;
+        }
+
+        .spacer {
+            aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url("./layer1.svg");
+        }
+
+
+
+        .bubble::after {
+            content: '';
+            border-top-left-radius: 50% 100%;
+            border-bottom-right-radius: 50% 100%;
+            position absolute;
+            bottom: 0;
+            height: 85%;
+            width: 100%;
+            background-color: #0f0f0f;
+            z-index: -1;
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<section class="blue">
+    <h1>Nice Curves</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus ipsam, ipsum laudantium
+        necessitatibus nihil omnis quo reiciendis, rem soluta temporibus vel voluptas? Ab consequuntur deleniti dolorem
+        illo maxime non?</p>
+    <div class="curve"></div>
+</section>
+<section>
+    <h1>Nice Curves</h1>
+    <p>Ad asperiores cumque dolores doloribus eos facere impedit itaque neque nisi nobis, nostrum quidem sunt? Cumque
+        omnis, suscipit! Deserunt dolorem doloribus enim maiores minima, mollitia nobis provident recusandae totam
+        vel!</p>
+</section>
+<section class="bubble">
+    <h1>Nice Curves</h1>
+    <p>Adipisci architecto atque, autem dolor dolorum ducimus eaque eligendi esse excepturi facere in ipsam magni nam
+        nihil obcaecati officiis perferendis porro, ratione sit vero? Cum delectus earum numquam repellendus ullam?</p>
+</section>
+
+<div class="spacer layer2 flip"></div>
+<section class="pink">
+    <h1>Nice Curves</h1>
+    <p>A ad assumenda aut blanditiis culpa cupiditate dolor dolorem dolores, eligendi error impedit in inventore labore
+        libero maiores numquam quaerat, qui quia quisquam recusandae reiciendis repellendus repudiandae sint ut
+        voluptatum!</p>
+</section>
+<div class="spacer layer2"></div>
+
+<div class="spacer layer1"></div>
+<section>
+    <h1>Nice Curves</h1>
+    <p>A aperiam delectus eum id laborum nemo odit soluta temporibus veritatis voluptas! Assumenda, blanditiis
+        consequatur, debitis eligendi exercitationem, minima minus mollitia obcaecati optio quod quos reiciendis
+        repellendus rerum tenetur velit.</p>
+</body>
+</html>

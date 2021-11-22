@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e44f229c-feec-480f-84bd-c07ce5f155be" name="Default Changelist" comment="v2">
+    <list default="true" id="e44f229c-feec-480f-84bd-c07ce5f155be" name="Default Changelist" comment="v2.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/werk.html" beforeDir="false" afterPath="$PROJECT_DIR$/werk.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,7 @@
       <workItem from="1634291152039" duration="114000" />
       <workItem from="1637313889728" duration="885000" />
       <workItem from="1637317474170" duration="2358000" />
-      <workItem from="1637575704479" duration="1495000" />
+      <workItem from="1637575704479" duration="2730000" />
     </task>
     <task id="LOCAL-00001" summary="v0">
       <created>1604310984045</created>
@@ -235,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637575900909</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="v2.1">
+      <created>1637577230830</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637577230830</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +267,7 @@
     <MESSAGE value="v1.3" />
     <MESSAGE value="v1.5" />
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+    <MESSAGE value="v2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.1" />
   </component>
 </project>
